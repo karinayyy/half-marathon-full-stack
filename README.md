@@ -1,4 +1,5 @@
-# At this link is half-marathon-full-stack. The table shows the scores for each of the tasks of the first marathon. During this time, thanks to Ucode-Connect, I learned the basic concepts of the HTML, CSS, JS and many other useful features.
+# At this link is half-marathon-full-stack. 
+The table shows the scores for each of the tasks of the first marathon. During this time, thanks to Ucode-Connect, I learned the basic concepts of the HTML, CSS, JS and many other useful features.
 <table>
   <tr>
     <th>Name</th>
