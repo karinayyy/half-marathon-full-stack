@@ -1,0 +1,31 @@
+.conteiner {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.block:hover {
+    box-shadow: -1px 1px 14px 6px rgba(101, 104, 107, 0.35);
+}
+
+.tempreture {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.date {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-color: rgb(64, 149, 181);
+}

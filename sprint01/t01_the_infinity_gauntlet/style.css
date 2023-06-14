@@ -1,0 +1,22 @@
+.gauntlet {
+    width: 200px;
+}
+
+.person-icons img {
+    width: 100px;
+    margin: 2px;
+}
+
+.person-icons {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gauntlet:hover + .person-icons img:nth-child(12n+1),
+.gauntlet:hover + .person-icons img:nth-child(12n+3),
+.gauntlet:hover + .person-icons img:nth-child(12n+5),
+.gauntlet:hover + .person-icons img:nth-child(12n+8),
+.gauntlet:hover + .person-icons img:nth-child(12n+10),
+.gauntlet:hover + .person-icons img:nth-child(12n){
+    visibility: hidden;
+}

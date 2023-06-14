@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*main menu*/
+.top-dropdown-menu ul{
+    background-color: #902924;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.top-dropdown-menu ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+.top-dropdown-menu ul li a,
+.top-dropdown-menu ul li p{
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-dropdown-menu ul li a:hover{
+    color: #fff;
+    background-color: #b6332d;
+}
+
+.top-dropdown-menu ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: #b6332d;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+.top-dropdown-menu ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+
+.top-dropdown-menu ul li ul.dropdown li{
+    display: block;
+}
+
+/*breadcrumb*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    margin: 0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #b6332d;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #902924;
+    text-decoration: underline;
+}
+
+/*Catalog title-and-sort-values*/
+.title-and-sort-values {
+    margin-left: 20px;
+}
+.title-and-sort-values h1{
+    margin-left: 20px;
+}
+.sorting-values {
+    padding: 20px 40px;
+}
+
+.sort-values {
+    display: inline-flex;
+}
+
+.sort-values .sort-item {
+    margin: 15px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 40px;
+}
+
+.main-div {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #fff;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+.range-div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.range-div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.range-div div div {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.range-div input {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 3px;
+    background: #a1a1a1;
+    border-radius: 5px;
+    background-color: #a1a1a1;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+.range-div input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #902924;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+.range-div input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+/*store-item*/
+.store-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.store-item {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.store-item img {
+    width: 90px;
+    height: 200px;
+}
+
+.store-item div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.store-item a {
+    color: white;
+}
+.item-name {
+    text-transform: uppercase;
+}
+
+.available-text {
+    color: #00cc00;
+}
+
+.is-available-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.available-btn {
+    background-color: #6e0000;
+    color: white;
+}
+.not-available-btn {
+    background-color: #eeeeee;
+    color: white;
+}
+.not-available-text {
+    color: #ff1000;
+}
+
+/*card styles*/
+.card-item-img {
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+}
+
+.card-img-and-body {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.card-description button {
+    width: 150px;
+}
+
+.card-description button a {
+    color: white;
+}
+.comment {
+    display: inline-flex;
+    border: 2px solid #6e0000;
+    padding: 10px;
+    height: 50px;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .main-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .sorting-values {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .checkbox-div div {
+        display: flex;
+        flex-direction: row;
+    }
+    .checkbox-div label {
+        margin-left: 20px;
+    }
+    .checkbox-div input {
+        margin-top: 6px;
+    }
+    .store-items-container {
+        /*padding: 20px 40px;*/
+        justify-content: center;
+        width: 100%;
+    }
+    .store-item {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .card-img-and-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-item-img {
+        rotate: 90deg;
+        padding: 0;
+    }
+    .card-description {
+        margin: 0;
+    }
+
+    .centerd-text {
+        text-align: center;
+    }
+
+    .center-btn {
+        align-self: center;
+    }
+}

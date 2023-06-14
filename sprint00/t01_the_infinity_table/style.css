@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 10px;
+    text-align: center;
+}
+  
+thead {
+    background-color: #000;
+    color: #fff;
+}
+
+td, tr {
+    border: 1px solid #a9a2c7;
+}
+
+th {
+    padding: 10px;
+}
+
+tfoot > tr > td {
+    padding: 10px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+.soul-tr {
+    background-color: #d6923d;
+}
+
+.time-tr {
+    background-color: #008001;
+}
+
+.space-tr {
+    background-color: #005792;
+}
+
+.mind-tr {
+    background-color: #ffff05;
+}
+
+.real-tr {
+    background-color: #c12a2e;
+}
+
+.power-tr {
+    background-color: #8175b7;
+}

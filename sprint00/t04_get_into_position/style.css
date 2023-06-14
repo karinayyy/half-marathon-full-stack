@@ -1,0 +1,17 @@
+h1 {
+    background: #ec3323;
+    display: flex;
+    margin: 0;
+    /* padding-bottom: 9px; */
+}
+
+span {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    line-height: 0.1;
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-dropdown-menu">
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li>
+                <a href="#service">Service</a>
+                <ul class="dropdown">
+                    <li><a href="https://t.me/karinayyy">Contact</a></li>
+                    <li><a href="#other">Other</a></li>
+                    <li><p>Phone: +123456</p></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="breadcrumb-div">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li>Catalog</li>
+        </ul>
+    </div>
+
+    <div class="title-and-sort-values">
+        <h1>Catalog</h1>
+        <div class="sort-values">
+            <div class="sort-item">Weapon &#10003</div>
+            <div class="sort-item">Alien &#10003</div>
+            <div class="sort-item">Green &#10003</div>
+        </div>
+    </div>
+
+    <div class="main-div">
+        <div class="sorting-values">
+            <div class="checkbox-div">
+                <p>Change of Lethal Effect</p>
+                <div>
+                    <input type="checkbox" id="effectone" name="effectone" checked>
+                    <label for="effectone">Effect 1</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="effecttwo" name="effecttwo">
+                    <label for="effecttwo">Effect 2</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="effectthree" name="effectthree">
+                    <label for="effectthree">Effect 3</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="effectfour" name="effectfour">
+                    <label for="effectfour">Effect 4</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="effectfive" name="effectfive">
+                    <label for="effectfive">Effect 5</label>
+                </div>
+            </div>
+            <div class="range-div">
+                <label for="volume">Price</label>
+                <div>
+                    <input type="range" id="volume" name="volume"
+                           min="0" max="20000">
+                    <div>
+                        <span>0</span>
+                        <span>20000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-items-container">
+            <div class="store-item">
+                <img src="./assets/images/The-Infinity-Gauntlet.png" alt="The-Infinity-Gauntlet">
+                <div>
+                    <span class="item-name">The Infinity Gauntlet</span>
+                    <b>2345</b>
+                    <span class="available-text">available</span>
+                    <button class="is-available-btn available-btn"><a href="card.html">BUY</a></button>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="./assets/images/The-Infinity-Gauntlet.png" alt="The-Infinity-Gauntlet">
+                <div>
+                    <span class="item-name">The Infinity Gauntlet</span>
+                    <b>2345</b>
+                    <span class="available-text">available</span>
+                    <button class="is-available-btn available-btn">BUY</button>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="./assets/images/The-Infinity-Gauntlet.png" alt="The-Infinity-Gauntlet">
+                <div>
+                    <span class="item-name">The Infinity Gauntlet</span>
+                    <b>2345</b>
+                    <span class="not-available-text">not available</span>
+                    <button class="is-available-btn not-available-btn">BUY</button>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="./assets/images/The-Infinity-Gauntlet.png" alt="The-Infinity-Gauntlet">
+                <div>
+                    <span class="item-name">The Infinity Gauntlet</span>
+                    <b>2345</b>
+                    <span class="available-text">available</span>
+                    <button class="is-available-btn available-btn">BUY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="right-div">
+
+                <div class="font-div">
+                    <span>Typerface</span>
+                    <br>
+                    <br>
+                    <i class="arrow"></i>
+                    <select name="font-type" id="lang">
+                        <option value="Acunim Pro">Acunim Pro</option>
+                        <option value="Comic Sans">Comic Sans</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+                    <br>
+                    <br>
+                    <span>Weight</span>
+                    <br>
+                    <input class="checkbox" type="checkbox"> Regular
+                    <input class="checkbox" type="checkbox" checked> Bold
+                    <br>
+                    <br>
+                    <div class="content size">
+                        <span>Size</span>
+                        <input type="range" name="size" id="size" />
+                        <label for="size"></label>
+                    </div>
+
+                    <datalist id="values">
+                        <option value="0" label="A"></option>
+                        <option value="100" label="A"></option>
+                    </datalist>
+                </div>
+
+                <div class="color-div">
+                    <div class="check-box-div">
+                        <span>Dark UI</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="color-rounds-span">
+                        <span>Color</span>
+                        <br>
+                        <div class="color-rounds-btn">
+                            <button class="color-button" style="background-color: #3e73c0"></button>
+                            <button class="color-button" style="background-color: #37bca4"></button>
+                            <button class="color-button" style="background-color: #dd57d0"></button>
+                            <button class="color-button" style="background-color: #dcd951"></button>
+                            <button class="color-button" style="background-color: #de7c58"></button>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <div class="left-div">
+            <img src="assets/images/artistic-brush.png">
+            <img src="assets/images/user-icon.png">
+            <img src="assets/images/sms-speech-bubble.png">
+            <img src="assets/images/computer-screen.png">
+        </div>
+    </div>
+</body>
+</html>
