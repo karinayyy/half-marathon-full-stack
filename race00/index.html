@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="default_calc">
+        <div class="calculationHistory">...</div>
+        <div class="input"> 
+        </div>
+        <div class="one-row">
+            <button id="r1-1" onclick="connectMemory()">M+</button>
+            <button id="r1-2" onclick="subtractFromMemory()">M-</button>
+            <button id="r1-3" onclick="transToBin()">bin</button>
+            <button id="r1-4" onclick="transToDec()">dec</button>
+        </div>
+        <div class="one-row">
+            <button id="r2-1" onclick="cleanMemory()">MC</button>
+            <button id="r2-2" style="width: 209px;" onclick="convers()">conversion</button>
+        </div>
+        <div class="three-row">
+            <button id="r3-1" onclick="calculateFactorial()">x!</button>
+            <button id="r3-2" onclick="symbolCalculation(6)"><span>x^n</button></span></button>
+            <button id="r3-3" onclick="calculateRoot(7)">&#8730x</button>
+            <button id="r3-4" onclick="readMemory()">MR</button>
+        </div>
+        <div class="four-row">
+            <button id="r4-1" onclick="cleanCalculation()">C</button>
+            <button id="r4-2" onclick="reverseSign()">+/-</button>
+            <button id="r4-3" onclick="calculateInterestSym()">%</button>
+            <button id="r4-4" onclick="symbolCalculation(3)">/</button>
+        </div>
+        <div class="fife-row">
+            <button id="r5-1" onclick="updatedPressedNumber(7)">7</button>
+            <button id="r5-2" onclick="updatedPressedNumber(8)">8</button>
+            <button id="r5-3" onclick="updatedPressedNumber(9)">9</button>
+            <button id="r5-4" onclick="symbolCalculation(2)">*</button>
+        </div>
+        <div class="six-row">
+            <button id="r6-1" onclick="updatedPressedNumber(4)">4</button>
+            <button id="r6-2" onclick="updatedPressedNumber(5)">5</button>
+            <button id="r6-3" onclick="updatedPressedNumber(6)">6</button>
+            <button id="r6-4" onclick="symbolCalculation(0)">+</button>
+        </div>
+        <div class="seven-row">
+            <button id="r7-1" onclick="updatedPressedNumber(1)">1</button>
+            <button id="r7-2" onclick="updatedPressedNumber(2)">2</button>
+            <button id="r7-3" onclick="updatedPressedNumber(3)">3</button>
+            <button id="r7-4" onclick="symbolCalculation(1)">-</button>
+        </div>
+        <div class="eight-row">
+            <button id="r8-1" onclick="updatedPressedNumber(0)">0</button>
+            <button id="r8-2" onclick="pointCalculation()">.</button>
+            <button id="r8-3" style="width: 138px;" onclick="resultCalculation()">=</button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
